@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
 import {ListProductComponent} from "./album/list-product/list-product.component";
+import {HomeComponent} from "./pages/home/home.component";
 
 export const routes: Routes = [
-  {path: '/', pathMatch:"full" ,component:ListProductComponent},
+  {path: '',redirectTo:'home', pathMatch:"full"},
+  {path: 'home',component:HomeComponent},
 
 ];
